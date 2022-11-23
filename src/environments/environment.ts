@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  baseApi:"https://dummyjson.com/",
   production: false
 };
 

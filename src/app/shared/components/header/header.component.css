@@ -1,0 +1,30 @@
+nav{
+    background: linear-gradient(to right,hsl(231, 54%, 7%),#4c4db9);
+    color: #FFF;
+}
+.content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;     
+}
+img{
+    width: 50px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+
+}
+
+li{
+    cursor: pointer;
+    font-size: 22px;
+    color: #FFF;
+    margin: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+}

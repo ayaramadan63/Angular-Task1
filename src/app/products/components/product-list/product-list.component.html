@@ -1,0 +1,41 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" 
+    *ngFor="let product of products |objectToArr | paginate: { itemsPerPage: count, currentPage: p }
+     let i=index " 
+     routerLink="/product-details/{{product.id}}">
+        <div class="item" >
+            <div class="body">
+              <img src="{{product.thumbnail}}" alt="">
+                <h4>{{product.title}} </h4>
+                <p>{{product.description}}</p>
+                <p>{{product.category}}</p> 
+                <p>{{product.brand}}</p>
+    
+            </div>  
+            <div class=" col px-3 mb-2
+            d-flex justify-content-between
+              align-items-center">
+              <button class="btn btn-success"  
+              >Edit</button>
+              <button class="btn btn-danger"  
+              >Delete</button>
+              <span>{{product.price}} L.E</span>
+
+            </div>
+              
+        </div>
+      </div>
+      </div>
+
+  </div><br><br>
+
+  <div class="paginate">
+    <div class="text-right">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+  
+  
